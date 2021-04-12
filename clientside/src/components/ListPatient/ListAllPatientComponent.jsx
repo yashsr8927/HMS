@@ -1,3 +1,4 @@
+//imports
 import React, { Component } from 'react';
 import AllPatientService from '../../services/AllPatientService';
 
