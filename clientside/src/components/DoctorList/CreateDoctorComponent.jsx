@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import DoctorService from '../../services/DoctorService';
 
+//new doctor doc will create
 class CreateDoctorComponent extends Component {
     constructor(props) {
         super(props)
