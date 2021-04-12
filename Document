@@ -1,0 +1,80 @@
+
+
+COURSE: E-DAC
+
+
+TEAM MEMBERS:
+
+1. Ritika Shrivastava (200950181083)
+2. Pratibha Mall (200950181072)
+3. Prateek Pal (200950181071)
+4. Yash Srivastava (200950181116)
+5. Byreddy Sai Prathap Reddy (200950181027)
+
+
+
+PROGRAM WORKING: -
+1.	We have performed CRUD Operations in the project. Because it is simple system, the user can perform easily.
+2.	This application has a provision to Create, Read, Update, delete, Update patient records such as name, disease etc.
+3.	Create in-patient for patient details by entering his/her name, disease name etc. Admission process.
+4.	Create out-patient who visited.
+
+
+This hospital management system offers following operations:
+a.	Register new patient with records such as name, disease.
+b.	Update patient details.
+c.	Read patient details.
+d.	Delete inactive patients. If they were discharged.
+
+
+
+
+
+
+Consider a user Input Scenario to understand the flow of project:
+Presentation Layer
+Register new patient To when we clicked on that button it will be redirected to a form ,when we fill the form and click on the save in presentation it will go to savePateint method .
+Service Layer
+Now savePatient method will call createPatient of service layer which will fetch the rest api calling method createPatient of Patientcontroller class
+DAO Layer
+Now createPatient of Patientcontroller class will be called and it will return PatientRepository.save()
+If(category== 'out')
+Setward= null
+SetroomNo= 0
+SetAdmitdate= null
+Else
+Return PatientRepository.save()
+After this Return PatientRepository will automatically create a query using hibernate for insertig data into the db.
+
+
+Point where we stuck during programming:
+
+a.	During calling 2nd get method for fetching the details of the patient for update inside the same “componentDidMount” method we got stuck.
+b.	So, we created a different page for updating and deleting the details then an ambiguous error came in the back-end.
+c.	Ambiguous error between get method parameter as category (String) for calling “getPatientbyCategory” and method parameter as ID (Long) for calling “getPatientByID” compiler got confused between category (String) and ID (Long).
+d.	To solve this error, we created a new controller class with a different API. Auto wiring same repository and different service class in React for fetching that API. Then it worked as our expectation.
+
+
+
+
+
+
+
+
+Learnings: -
+
+1.	We gained the opportunity to work with others as a team towards a goal.
+2.	This project helped improving our skills and the learning will surely help us in our future projects.
+3.	Instead of focusing on the negative part of the project, we focused on the positive part.
+4.	Breaking complex tasks into parts and steps.
+5.	We learn how to manage time during coding.
+6.	Everyone encouraged the recycling of good ideas and highlight the avenues that previously didn’t work well.
+
+
+
+
+
+
+
+
+
